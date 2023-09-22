@@ -1,0 +1,41 @@
+import java.util.*;
+public class Demo {
+
+	public static void main(String[] args) {
+		
+		Demo D=new Demo();
+		
+		int res=D.Binary(5);
+		System.out.println(res);
+	}
+	 int Binary(int n){
+		Scanner scan=new Scanner(System.in);
+		System.out.println("value of n is geven");
+		int arr[]=new int[n];
+		System.out.println("Enter array elements");
+		
+		for(int i=0;i<=arr.length-1;i++) {
+			arr[i]=scan.nextInt();
+		}
+		System.out.println("Enter key to search");
+		int key=scan.nextInt();
+		
+		int index1=0;
+		int indexLast=n-1;
+		while(n>=1) {
+			int mid=(index1+indexLast/2);
+			
+			if(key==arr[mid]) {
+				return mid;
+			}
+			else if(key>arr[mid]) {
+				int low=mid+1;
+			}
+			else {
+				int high=mid-1;
+			}
+		}
+		return -1;
+	}
+
+}

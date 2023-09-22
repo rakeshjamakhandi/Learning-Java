@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Demo {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Is input valid (true/false)");
+		boolean input=scan.nextBoolean();
+		System.out.println("Does input meet a certain condition (true/false)");
+		boolean condition=scan.nextBoolean();
+
+		System.out.println("the output is: "+isValidInput(input,condition)); 
+
+		if(isValidInput(input,condition)==true) {
+			System.out.println("Input is valid.");		
+		}
+		
+		
+	    else {
+			System.out.println("Input is invalid.");
+		}
+	}
+	public static boolean isValidInput(boolean input, boolean condition) {
+		if(input==true&&condition==true) {
+			
+		return true;
+	}
+		return false;
+	}
+}
+

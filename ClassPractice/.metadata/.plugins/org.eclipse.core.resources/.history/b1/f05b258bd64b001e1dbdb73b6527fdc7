@@ -1,0 +1,12 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+	  int myInt=50;
+	  double myDouble=myInt;
+	  System.out.println(myDouble);
+	  
+	  double myDouble1=50L;
+	  int myInt1=(int)myDouble1;
+	}
+}

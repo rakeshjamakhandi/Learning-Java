@@ -1,0 +1,13 @@
+
+public class Demo {
+
+	public static void main(String[] args) {
+	  int myInt=50;
+	  double myDouble=myInt;
+	  System.out.println(myDouble);
+	  
+	  double myDouble1=40;
+	  int myInt1=myDouble1;
+	  System.out.println(myInt1);
+	}
+}

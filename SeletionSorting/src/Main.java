@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the length of Array");
+		int arr[]=new int[scan.nextInt()];
+		
+		System.out.println("array "+arr.length+" length are...");
+		for(int i=0;i<=arr.length-1;i++) {
+			arr[i]=scan.nextInt();
+		}
+		
+		System.out.println("Array elements before sorting");
+		for(int i=0;i<=arr.length-1;i++) {
+			System.out.print(arr[i]+" ");
+		}
+		System.out.println();
+		
+		System.out.println("Array elements after sorting..");
+		Demo d=new Demo();
+		d.Selectionsorting(arr);
+		
+		for(int i=0;i<=arr.length-1;i++) {
+			System.out.print(arr[i]+" ");
+		}
+
+
+	}
+
+}

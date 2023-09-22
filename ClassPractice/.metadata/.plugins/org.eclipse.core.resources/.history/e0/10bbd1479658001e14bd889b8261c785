@@ -1,0 +1,24 @@
+import java.util.*;
+public class Demo {
+
+	public static void main(String[] args) {
+	Scanner sc=new Scanner(System.in);
+	System.out.println("Enter Two numbers");
+	int m=sc.nextInt();
+	int n=sc.nextInt();
+	findGCD(m,n);
+	
+	}
+	public static void findGCD(int m, int n) {
+		
+		while(n!=0) {
+			int rem=m%n;
+		    m=n;
+		    n=rem;
+		    if(n==0) {
+		    	System.out.println(m);
+		    }
+		}
+		
+	}
+}

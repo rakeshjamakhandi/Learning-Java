@@ -1,0 +1,26 @@
+package LinearAndBinarySearch;
+import java.util.Scanner;
+public class BubbleSorting {
+
+	public static void main(String[] args) {
+		Scanner scan=new Scanner(System.in);
+		System.out.println("Enter the Array length");
+		int arr[]=new int[scan.nextInt()];
+		
+		System.out.println("The "+arr.length+" Array elements are");
+		for(int i=0;i<=arr.length-1;i++) {
+			arr[i]=scan.nextInt();
+		}
+		
+		for(int i=0;i<=arr.length-1;i++) {
+			for(int j=0;j<=arr.length-2-i;j++) {
+				if(arr[j]>arr[j+1]) {
+				  int swap=(arr[j]&arr[j+1]);
+				}
+			}
+			System.out.print(arr[i]+" ");
+		}
+
+	}
+
+}
